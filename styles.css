@@ -137,6 +137,10 @@ footer p {
 }
 
 /*contact us*/
+.csmain {
+    background-image: url('images/lucifer.png');
+    background-size:contain;
+}
 .content-form {
     background-color: #fff9f4;
     padding: 50px;

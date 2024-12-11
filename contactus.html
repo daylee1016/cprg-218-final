@@ -6,37 +6,47 @@
   <title>Tori & Dianne Studio</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body class="contactus">
     <header>
         <img src="images/logo.png" class="logo" alt="T&D Studio Logo">
-        <h1>T&D Studio</h1>
         <nav class="nav-button">
-            <button id="Home"><a href="index.html">Home</a> </button>
+            <button id="home"><a href="index.html">Home</a> </button>
             <button id="portfolio"><a href="portfolio.html">Portfolio</a></button>
-            <button id="ContactUs"><a href="contactus.html">Contact Us</a></button>
+            <button id="contactus"><a href="contactus.html">Contact Us</a></button>
         </nav>
     </header>
     <main>
-        <h2 id="h2">Contact T&D!</h2>
-        <section class="content">
-        <img src="" id="img">
-        <figcaption id="figcaption">Share the story about your furry friend!</figcaption>
+        <h1>Contact T&D!</h1>
+
+        <section class="content-form">
+            <h2>We would love to hear about your furry friend!</h2>
+            <p>I cannot wait to turn your pet into a master piece!</p>
+            <form action="submit_form.php" method="POST">
+                <label for="Name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="petname">Pet's Name:</label>
+                <input type="text" id="petname" name="petname" placeholder="Enter your pet's name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="aboutpet">Tell us about your pet:</label>
+                <textarea type="aboutpet" id="aboutpet" name="aboutpet" placeholder="What is unique about your pet?" rows="5" required></textarea>
+               
+                <label for="petimg">Upload photos of your pet</label>
+                <input type="file" id="petimg" name="petimg">
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>  
-
-    <main>
-        <section>
-        <h3>Get in Touch</h3>
-        <p>I cannot wait to turn your pet into a master piece!</p>
-        </section>
-    </main>  
-
 
     <footer>
         <p>email: torindiannestudio@gmail.com</p>
         <p>instagram: tndstudio.yyc</p>
-        <p> Contact us for more info!</p>
     </footer>
 
     <script src="tnd.js"></script>

@@ -116,26 +116,24 @@ footer p {
 
 
 /*Portfolio Page*/
-.portfolio-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fil, minmax(300px, 1hr));
-    gap: 20px;
-    justify-items: center;
-    padding: 30px;
+.gallery {
+    font-size: 2rem;
 }
-
 .img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin:0% auto;
+  max-width: 3000px;
+  padding: 10px;
 }
 
 .img img {
     width: 100%;
     max-width: 400px;
     border-radius: 5px;
+    height: auto;
 }
 
 /*contact us*/
@@ -187,3 +185,114 @@ footer p {
 .content-form button:hover {
     background-color: #e29b5d;
 }
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-buttons {
+        margin-top: 16px;
+    }
+    .nav-buttons button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    main h1 {
+        font-size: 2rem;
+        margin: 20px;
+    }
+
+    .content figcaption {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+    
+    .img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        max-width: 180px;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    .content figcaption {
+        font-size: 1.2rem;
+    }
+
+    .img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        justify-content: center;
+    }
+}
+
+/* Large Screens (1025px - 1920px) */
+@media (min-width: 1025px) and (max-width: 1920px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    .logo {
+        max-width: 250px;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    .content figcaption {
+        font-size: 1.4rem;
+    }
+    .img{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
